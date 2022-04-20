@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Главная</title>
+</head>
+	<body>
+		<div class="wrap">
+		<header class="header">
+    <div class="header__body _container">
+        <img class="header__logo" src="img/logo.png" alt="">
+        <div class="header__icons">
+            <div class="header__icon">
+                <a href="permission.html" class="header__link">
+                    <span class="icon-user"></span>
+                    <span class="header__subtitle">
+                        Разрешения
+                    </span>
+                </a>
+            </div>
+            <div class="header__icon icon_reg_auth">
+                <span class="icon-user"></span>
+                <span class="header__subtitle">
+                    Войти
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+		<main class="content">
+			<div class="content__body _container">
+                <div class="navigation-chain">
+                    <div class="navigation-chain__item"><a href="permission.html">Разрешения / </a></div>
+                    <div class="navigation-chain__item navigation-chain__item_active">Добавление разрешения</div>
+                </div>
+				<div class="content__add-permission permission-add">
+          <form method="post" class="permission-add__top">
+            <div class="permission-add__title">
+              Разрешение № <input type="text" class="permission-add__input" placeholder="Номер" value="1">
+            </div>
+            <input type="submit" class="permission-add__button input button" value="Изменить">
+          </form>
+          <div class="permission-add__list">
+            <div class="permission-add__item">
+              <div class="permission-add__subtitle">
+                1. Выдал начальнику Иванов Иван Иванович для выполнения следующих работ:
+              </div>
+              <form class="permission-add__types">
+                <div class="permission-add__type">
+                  <div class="permission-add__type-name">
+                    - Типовая работа 1
+                  </div>
+                  <span class="icon-clear permission-add__clear"></span>
+                </div>
+                <div class="permission-add__type">
+                  <div class="permission-add__type-name">
+                    - Типовая работа 1
+                  </div>
+                  <span class="icon-clear permission-add__clear"></span>
+                </div>
+                <div class="permission-add__type">
+                  <div class="permission-add__type-name">
+                    - Типовая работа 1
+                  </div>
+                  <span class="icon-clear permission-add__clear"></span>
+                </div>
+                <div class="permission-add__type">
+                  <div class="permission-add__type-name">
+                    - Типовая работа 1
+                  </div>
+                      <span class="icon-clear permission-add__clear"></span>
+                </div>
+                <input type="submit" class="permission-add__button input button" value="Добавить">
+              </form>
+              <div class="permission-add__block">
+                <textarea class="permission-add__textarea" name="" id="" cols="30" rows="10" placeholder="Введите нетиповые работы..."></textarea>
+              </div>
+            </div>
+            <div class="permission-add__item">
+              <div class="permission-add__subtitle">
+                2. В период:
+              </div>
+              <form method="post" class="permission-add__block">
+                <div class="permission-add__dates">
+                  <div class="permission-add__date">
+                    <div class="permission-add__col">
+                      Дата
+                    </div>
+                    <div class="permission-add__col">
+                      Время начала
+                    </div>
+                    <div class="permission-add__col">
+                      Время окончания
+                    </div>
+                  </div>
+                  <div class="permission-add__date">
+                    <div class="permission-add__col">
+                      12.12.2022
+                      <input type="text" hidden value="12.12.2022">
+                    </div>
+                    <div class="permission-add__col">
+                      13:30
+                      <input type="text" hidden value="13:30">
+                    </div>
+                    <div class="permission-add__col">
+                      15:40
+                      <input type="text" hidden value="15:40">
+                    </div>
+                  </div>
+                  <div class="permission-add__date">
+                    <div class="permission-add__col">
+                      12.12.2022
+                      <input type="text" hidden value="12.12.2022">
+                    </div>
+                    <div class="permission-add__col">
+                      13:30
+                      <input type="text" hidden value="13:30">
+                    </div>
+                    <div class="permission-add__col">
+                      15:40
+                      <input type="text" hidden value="15:40">
+                    </div>
+                  </div>
+                  <div class="permission-add__date">
+                    <div class="permission-add__col">
+                      12.12.2022
+                      <input type="text" hidden value="12.12.2022">
+                    </div>
+                    <div class="permission-add__col">
+                      13:30
+                      <input type="text" hidden value="13:30">
+                    </div>
+                    <div class="permission-add__col">
+                      15:40
+                      <input type="text" hidden value="15:40">
+                    </div>
+                  </div>
+                </div>
+                <input type="submit" class="permission-add__button input button sticky" value="Изменить">
+              </form>
+            </div>
+            <div class="permission-add__item">
+              <div class="permission-add__subtitle">
+                3. Описание:
+              </div>
+              <textarea class="permission-add__textarea" name="" id="" cols="30" rows="10" placeholder="Введите описание..."></textarea>
+            </div>
+            <div class="permission-add__item">
+              <div class="permission-add__subtitle">
+                5. Ответственные за подготовку работ:
+              </div>
+              <div class="permission-add__responsibles">
+                <form method="post" method="post" class="permission-add__responsible">
+                  <div class="permission-add__name">
+                   5.1. Иванов Иван Иванович
+                  </div>
+                  <span class="icon-clear permission-add__clear"></span>
+                </form>
+                <form method="post" class="permission-add__responsible">
+                  <div class="permission-add__name">
+                    5.2. Иванов Иван Иванович
+                  </div>
+                  <span class="icon-clear permission-add__clear"></span>
+                </form>
+                <form method="post" class="permission-add__responsible">
+                  <div class="permission-add__name">
+                    5.3. Иванов Иван Иванович
+                  </div>
+                  <span class="icon-clear permission-add__clear"></span>
+                </form>
+                <form method="post">
+                  <input type="text" value="Иванов Иван Иванович" hidden>
+                  <input type="text" value="Иванов Иван Иванович" hidden>
+                  <input type="text" value="Иванов Иван Иванович" hidden>
+                  <input type="submit" class="permission-add__button input button" value="Добавить">
+                </form>
+              </div>
+            </div>
+            <div class="permission-add__item">
+              <div class="permission-add__subtitle">
+                6. Ответственные за выполнение работ:
+              </div>
+              <div class="permission-add__responsibles">
+                <form method="post" class="permission-add__responsible">
+                  <div class="permission-add__name">
+                    6.1. Иванов Иван Иванович
+                    <input type="text" value="Иванов Иван Иванович" hidden>
+                  </div>
+                  <span class="icon-clear permission-add__clear"></span>
+                </form>
+                <form method="post" class="permission-add__responsible">
+                  <div class="permission-add__name">
+                    6.2. Иванов Иван Иванович
+                    <input type="text" value="Иванов Иван Иванович" hidden>
+                  </div>
+                  <span class="icon-clear permission-add__clear"></span>
+                </form>
+                <form method="post" class="permission-add__responsible">
+                  <div class="permission-add__name">
+                    6.3. Иванов Иван Иванович
+                    <input type="text" value="Иванов Иван Иванович" hidden>
+                  </div>
+                  <span class="icon-clear permission-add__clear"></span>
+                </form>
+                <form method="post">
+                  <input type="text" value="Иванов Иван Иванович" hidden>
+                  <input type="text" value="Иванов Иван Иванович" hidden>
+                  <input type="text" value="Иванов Иван Иванович" hidden>
+                  <input type="submit" class="permission-add__button input button" value="Добавить">
+                </form>
+              </а>
+            </div>
+            </div>
+            <div class="permission-add__item">
+              <div class="permission-add__subtitle">
+                7. Дополнительно:
+              </div>
+              <textarea class="permission-add__textarea" name="" id="" cols="30" rows="10" placeholder="Введите дополнительную информацию..."></textarea>
+            </div>
+          </div>
+          <div class="permission-add__bottom">
+            <input type="submit" value="Сохранить" class="permission-add__button input button">
+            <input type="submit" value="Выгрузить в PDF" class="permission-add__button input button">
+          </div>
+        </form>
+			</div>
+		</main>
+		<footer class="footer">
+    <div class="footer__body _container">
+        <address class="footer__mail">admin@gmail.com</address>
+        <div class="footer__copy">&copy; ПАО "Транснефть" 2022</div>
+        <div class="footer__links">
+            <a href="https://vk.com/transneftofficial" target="_blank" class="icon-vk footer__link"></a>
+            <a href="https://www.facebook.com/TRANSNEFT" target="_blank" class="icon-facebook footer__link"></a>
+            <a href="https://twitter.com/transneftRu" target="_blank" class="icon-twitter footer__link"></a>
+            <a href="https://www.instagram.com/transneftru/" target="_blank" class="icon-instagram-second footer__link"></a>
+            <a href="https://t.me/transneftofficial" target="_blank" class="icon-telegram footer__link"></a>
+            <a href="https://invite.viber.com/?g2=AQAJmjbSlaVw3kiGiek7m4%2BbhLm0X01ggdP5DAoiuQUSUvejqFEpi8Rp5Wy6uqI7&lang=ru" target="_blank" class="icon-viber footer__link"></a>
+            <a href="https://www.youtube.com/user/transneftru" target="_blank" class="icon-youtube footer__link"></a>
+        </div>
+    </div>
+</footer>
+		</div>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

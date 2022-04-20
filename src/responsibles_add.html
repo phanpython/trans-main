@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrap">
+		@@include('html/header.html',{})
+		<main class="content respobsible">
+			<div class="content__body _container-main">
+                <div class="navigation-chain _container">
+                    <div class="navigation-chain__item"><a href="permission.html">Разрешения / </a></div>
+                    <div class="navigation-chain__item"><a href="permission_add.html">Добавление разрешения /</a></div>
+                    <div class="navigation-chain__item navigation-chain__item_active">Ответственные</div>
+                </div>
+                <div class="responsible__top _container">
+                    <form method="post" class="content-search">
+						<input type="text" class="input" placeholder="Поиск ответственного по ФИО...">
+						<span class="icon-search"></span>
+						<input type="submit" hidden name="search__permission" class="responsible-search">
+					</form>
+                    <div class="responsible__button responsible__button-filter input button">Список подразделений</div>
+                </div>
+                <div class="responsible__filter">
+                    <form method="post" class="responsible__subdivisions">
+                        <div class="responsible__subdivision">
+                            <div class="responsible__text">
+                                Подразделение1.Подразделение2.Подразделение3
+                            </div>
+                        </div>
+                        <div class="responsible__subdivision">
+                            <div class="responsible__text">
+                                Подразделение1.Подразделение2.Подразделение3
+                            </div>
+                        </div>
+                        <div class="responsible__subdivision">
+                            <div class="responsible__text">
+                                Подразделение1.Подразделение2.Подразделение3
+                            </div>
+                        </div>
+                        <div class="responsible__subdivision">
+                            <div class="responsible__text">
+                                Подразделение1.Подразделение2.Подразделение3
+                            </div>
+                        </div>
+                        <div class="responsible__subdivision">
+                            <div class="responsible__text">
+                                Подразделение1.Подразделение2.Подразделение3
+                            </div>
+                        </div>
+                        <input type="text" hidden class="responsible-choice">
+                    </form>
+                    <div class="responsible__block">
+                        <div class="responsible__button responsible__button-close input button">Закрыть</div>
+                    </div>
+                </div>
+                <div class="content__table table-content">
+                    <div class="table-content__row table-content__row_head responsible-table-head">
+                        <div class="table-content__col table-content__head">Фамилия</div>
+                        <div class="table-content__col table-content__head">Имя</div>
+                        <div class="table-content__col table-content__head">Отчество</div>
+                        <div class="table-content__col table-content__head">Подразделение</div>
+                    </div>
+                    <div class="table-content__row table-row table-responsibles">
+                        <input type="text" hidden class="responsible-id" value="1">
+                        <div class="table-content__col table-col">
+                            <input type="text" value="Иванов" name="date-1" readonly class="table-col__input">
+                        </div>
+                        <div class="table-content__col table-col">
+                            <input type="text" value="Иван" name="time-from-1" readonly class="table-col__input">
+                        </div>
+                        <div class="table-content__col table-col">
+                            <input type="text" value="Иванович" name="time-to-1" readonly class="table-col__input">
+                        </div>
+                        <div class="table-content__col table-col">
+                            <input type="text" value="Подразделени1.Подразделени2.Подразделение3" name="time-to-1" readonly class="table-col__input">
+                        </div>
+                    </div>
+                    <div class="table-content__row table-row table-responsibles">
+                        <input type="text" hidden class="responsible-id" value="2">
+                        <div class="table-content__col table-col">
+                            <input type="text" value="Умалатов" name="date-1" readonly class="table-col__input">
+                        </div>
+                        <div class="table-content__col table-col">
+                            <input type="text" value="Умалат" name="time-from-1" readonly class="table-col__input">
+                        </div>
+                        <div class="table-content__col table-col">
+                            <input type="text" value="Умалатович" name="time-to-1" readonly class="table-col__input">
+                        </div>
+                        <div class="table-content__col table-col">
+                            <input type="text" value="Подразделени1.Подразделени2.Подразделение3" name="time-to-1" readonly class="table-col__input">
+                        </div>
+                    </div>
+                    <form method="post" class="choice-responsible">
+                        <input type="text" hidden class="responsible">
+                    </form>
+                </div>
+			</div>
+		</main>
+		@@include('html/footer.html',{})
+		</div>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

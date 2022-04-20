@@ -1,0 +1,149 @@
+.table-permission {
+    overflow:auto;
+    max-height: 80vh;
+
+    &__head,
+    &__col {
+        &:first-child {
+			min-width: 100px;
+		}
+		&:nth-child(2){
+			min-width: 200px;
+		}
+		&:nth-child(3){
+			min-width: 200px;
+		}
+		&:nth-child(4){
+			min-width: 200px;
+	}
+		&:nth-child(5){
+			min-width: 400px;
+		}
+		&:nth-child(6){
+			min-width: 400px;
+		}
+		&:nth-child(7){
+			min-width: 400px;
+		}
+		&:nth-child(8){
+			min-width: 300px;
+		}
+		&:nth-child(9){
+			min-width: 500px;
+		}
+		&:nth-child(10){
+			min-width: 500px;
+		}
+		&:nth-child(11){
+			min-width: 500px;
+		}
+    }
+
+	&__cell {
+		resize: none;
+		padding: 10px 0;
+		width: 100%;
+		outline: none;
+		border: 1px solid $mainColor;
+		height: 100%;
+		cursor: pointer;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&_several {
+			flex-direction: column;
+		}
+	}
+
+	&__subname {
+		margin: 10px 0;
+	}
+
+    &__head {
+        background: $mainColor;
+        padding: 10px 0;
+    }
+
+    &__row {
+        input { 
+            cursor: pointer;
+        }
+
+        &:hover {
+            input {
+                background: #A9BCF5;
+                transition: background-color 1s ease;
+            }
+
+			.table-permission__cell {
+				background: #A9BCF5;
+				transition: background-color 1s ease;
+			}
+        }
+    }
+}
+
+.filter-content {
+	display: none;
+	flex-direction: column;
+
+	&__block {
+		display: flex;
+		width: 60%;
+	}
+
+	&__list {
+		background: #fff;
+		border-radius: 5px;
+		margin: 0 0 20px 0;
+		width: 100%;
+		padding: 20px 100px;
+	}
+
+	&__date {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		input {
+			outline: none;
+			color: $mainColor;
+		}
+	}
+
+	&__span {
+		display: inline-block;
+		padding: 10px 0;
+		width: 150px;
+		font-size: 18px;
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: end;
+		margin: 20px 0;
+	}
+
+	&__button {
+		width: 200px;
+		color: #fff !important;
+		margin: 0 0 0 40px;
+	}
+
+    &__funcs {
+        display: grid;
+        grid-template-columns: 200px 1fr repeat(4, 200px);
+        grid-gap: 10px;
+
+        @media (max-width: 1400px) {
+            grid-template-columns: 200px 1fr repeat(3, 200px);
+		}
+    }
+
+	&_active {
+		display: flex;
+	}
+}
